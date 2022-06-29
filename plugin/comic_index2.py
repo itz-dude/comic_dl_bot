@@ -9,7 +9,7 @@ def comicindex2(client, callback_query):
     dataSplit = dataInitial.split("_")
     comicIndexNo = dataSplit[1]
     comic = dataSplit[2]
-    comiclink = f"http://kissmanga.nl/manga/{mangaId}"
+    comiclink = f"https://www.comicextra.com/comic/{comic}"
     response = requests.get(comiclink)
     plainText = response.text
     source_url = BeautifulSoup(plainText, "html.parser")
