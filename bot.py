@@ -10,17 +10,23 @@ from plugin.comic_index import comicindex
 from plugin.comic_index2 import comicindex2
 from plugin.comic_to_pdf import comic2Pdf
 from plugin.start import start
+import os
+import re
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
 
+API_ID = os.environ.get("API_ID", None) 
+API_HASH = os.environ.get("API_HASH", None) 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
+
 bot = Client(
     "comic",
-    api_id=config.api_id,
-    api_hash=config.api_hash,
-    bot_token=config.bot_token
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
 )
 
 
