@@ -2,7 +2,6 @@
 from pyrogram import *
 from pyrogram.filters import regex, text_filter
 from pyrogram.methods.utilities.start import Start
-import config
 import logging
 from pyrogram.handlers import *
 from plugin.comic_search import comicsearch
