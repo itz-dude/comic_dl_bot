@@ -14,7 +14,7 @@ def comic2Pdf(client, callback_query):
     dtSplit = dtInitial.split("_")
     comic = dtSplit[1]
     chapNumber = dtSplit[2]
-    strSplit = mangaId.split("-")
+    strSplit = comic.split("-")
     empty = " "
     comicTitle = empty.join(strSplit).title()   
     if os.path.exists(f"Download") == True:
