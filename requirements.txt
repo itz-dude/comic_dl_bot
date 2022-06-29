@@ -1,0 +1,6 @@
+pyrogram==1.4.16
+TgCrypto
+beautifulsoup4
+requests
+requests_html
+img2pdf
