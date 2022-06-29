@@ -22,7 +22,7 @@ def comic2Pdf(client, callback_query):
         os.mkdir(f"Download")
     else:
         os.mkdir(f"Download")
-    comiclink = f"https://www.comicextra.com/{comic}/{chapNumber}"
+    comiclink = f"https://www.comicextra.com/{comic}/chapter-{chapNumber}"
     response = requests.get(comiclink)
     plainText = response.text
     soup = BeautifulSoup(plainText, "html.parser")
